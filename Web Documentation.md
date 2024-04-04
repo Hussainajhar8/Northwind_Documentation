@@ -5,7 +5,7 @@ This document presents our strategy for deploying the Northwind Python applicati
 
 **Architecture Overview**
 
-![alt text](img/app-img/image-10.png)
+![alt text](img/img/app-img/image-10.png)
 
 Our deployment strategy involves implementing a two-tier architecture, separating the application layer from the database layer. This architecture enhances scalability, maintainability, and security.
 
@@ -23,8 +23,8 @@ To begin, we will set up our EC2 instance and open ports 20, 80, and 5000 on Ubu
 
 ### Step 1: Create EC2 Instance
 Launch an EC2 instance and ensure ports 20, 80, and 5000 are open in the security group.
-![Create EC2 Instance](app-img/image.png)
-![Security Group Configuration](app-img/image-1.png)
+![Create EC2 Instance](img/app-img/image.png)
+![Security Group Configuration](img/app-img/image-1.png)
 
 ### Step 2: SSH into VM
 Once the instance is running, SSH into the VM.
@@ -46,7 +46,7 @@ Run the following commands to set 3.9 as the default version in our instance:
 - `sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 1`
 - `sudo update-alternatives --config python3`
 Now check the default version.
-![Python Version](app-img/image-2.png)
+![Python Version](img/app-img/image-2.png)
 
 ### Step 7: Install Python Packages
 Use Pip to install required Python packages:
@@ -77,7 +77,7 @@ sudo pip install cffi
 
   ```
 Check the versions for the python dependencies.
-![Python Dependencies](app-img/image-3.png)
+![Python Dependencies](img/app-img/image-3.png)
 
 ### Step 8: Clone Repository
 - Create a directory for the repository: `mkdir repo`.
@@ -89,18 +89,18 @@ Check the versions for the python dependencies.
 - Set the FLASK_APP environment variable: `export FLASK_APP=northwind_web.py`.
 - Run the application: `waitress-serve --port=5000 northwind_web:app`.
 Confirm it is running.
-![Application Running](app-img/image-4.png)
-![Application Running](app-img/image-5.png)
+![Application Running](img/app-img/image-4.png)
+![Application Running](img/app-img/image-5.png)
 
 ### Step 10: Set Database Connection URI
 Export the DB_CONNECTION_URI environment variable: `export DB_CONNECTION_URI='mysql+pymysql://<user>:<password>@<ip-of-db>:3306/northwind'`.
-![Database Connection](app-img/image-6.png)
+![Database Connection](img/app-img/image-6.png)
 
 ### Step 11: Restart Application
 Restart the application to apply changes.
 Confirm it is running as expected.
-![Application Restarted](app-img/image-7.png)
-![Application Restarted](app-img/image-8.png)
+![Application Restarted](img/app-img/image-7.png)
+![Application Restarted](img/app-img/image-8.png)
 
 ### Final Script
 
@@ -199,6 +199,6 @@ sudo update-alternatives --config python3
 
 We also found that we had to install a dependency called cffi otherwise we got the below error.
 
-![alt text](img/app-img/image-9.png)
+![alt text](img/img/app-img/image-9.png)
 
 After installing cffi with `sudo pip install cffi `on the server it worked fine.
