@@ -18,7 +18,7 @@ We then used a terraform script to launch an instance with the configurations ne
 1. When SSH'd into the EC2 we began to put a script together using our manual commands
    *The first script was as follows:*
 
-![alt text](img/<Manual Commands for DB.png>)
+![alt text](img/ManualCommandsDB.png)
 
 ![alt text](<img/First DB automation script.png>)
 
