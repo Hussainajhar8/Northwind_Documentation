@@ -6,7 +6,6 @@ This document presents our strategy for deploying the Northwind Python applicati
 **Architecture Overview**
 
 ![alt text](img/app-img/image-10.png)
-
 Our deployment strategy involves implementing a two-tier architecture, separating the application layer from the database layer. This architecture enhances scalability, maintainability, and security.
 
 ## Toolset
