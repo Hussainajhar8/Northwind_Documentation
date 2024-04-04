@@ -18,6 +18,11 @@ Our deployment process incorporates the following advanced DevOps tools:
 
 **AWS**: Amazon Web Services (AWS) serves as the foundation for our cloud infrastructure, offering a diverse range of scalable and reliable services. AWS services such as EC2 for compute resources are utilised to build a robust and resilient deployment environment.
 
+## If time:
+Ansible: Utilised for automation, Ansible streamlines the provisioning and configuration of infrastructure components. Its simplicity and versatility make it an ideal choice for orchestrating our deployment process.
+
+Terraform: We employ Terraform for infrastructure as code (IaC), enabling us to define our cloud infrastructure in a declarative manner. By codifying our infrastructure, we can easily replicate environments, enforce consistency, and manage infrastructure changes more effectively.
+
 ## Setting up
 To begin, we will set up our EC2 instance and open ports 20, 80, and 5000 on Ubuntu 20.24, then install the required dependencies and launch our app.
 
@@ -199,6 +204,6 @@ sudo update-alternatives --config python3
 
 We also found that we had to install a dependency called cffi otherwise we got the below error.
 
-![alt text](img/img/app-img/image-9.png)
+![alt text](img/app-img/image-9.png)
 
 After installing cffi with `sudo pip install cffi `on the server it worked fine.
