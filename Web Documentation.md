@@ -10,7 +10,10 @@ Our deployment strategy involves implementing a two-tier architecture, separatin
 
 ## Toolset
 
-Our deployment process incorporates the following advanced DevOps tools:
+Our deployment process incorporates the following tools:
+
+**Trello**: To efficiently collaborate and complete tasks, we utilised Agile and Scrum methodologies and organised our tasks using Trello. This is what our populated Trello board looked like:
+![alt text](img/app-img/image-11.png)
 
 **Jenkins**: As our CI/CD automation server, Jenkins automates the build, test, and deployment phases of our application. Jenkins enables us to create robust pipelines that automatically trigger deployments upon code updates, ensuring rapid and reliable delivery of new features.
 
