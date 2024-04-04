@@ -3,7 +3,7 @@
 * To get more insight into what the error meant and why the script wouldn't run we sat on a call together with a shared screen whilst one person manually ran the commands from the script until we hit an error. 
 
 * The first blocker came from us not being able to run the below commands from the terminal like it would in the script:
- ![alt text](<Blocker - sudo -e.png>)
+ ![alt text](<img/Blocker - sudo -e.png>)
 
 * We had to actually enter into my SQL and run the commands without the sudo -e, we then created a user, database and granted privileges 
 
