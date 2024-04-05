@@ -22,7 +22,9 @@ Our deployment strategy involves implementing a two-tier architecture, separatin
 
 Our deployment process incorporates the following tools:
 
-### Trello: To efficiently collaborate and complete tasks, we utilised Agile and Scrum methodologies and organised our tasks using Trello. 
+### Trello: 
+
+To efficiently collaborate and complete tasks, we utilised Agile and Scrum methodologies and organised our tasks using Trello. 
 
 Firstly we had to agree on a Scrum master so that we could set up a Scrum Board that contained user stories and action cards and then work in daily sprints. At the end of each day we had mini retrospectives so that we could move tasks from doing to done or assess where we were or any blockers.
 
@@ -30,14 +32,22 @@ Here is our [Trello board](https://trello.com/invite/b/QDreLhch/ATTI55983b89aaf7
 ![alt text](img/app-img/image-11.png)
 
 
-### Jenkins: As our CI/CD automation server, Jenkins automates the build, test, and deployment phases of our application. Jenkins enables us to create robust pipelines that automatically trigger deployments upon code updates, ensuring rapid and reliable delivery of new features.
+### Jenkins: 
 
-### AWS: Amazon Web Services (AWS) serves as the foundation for our cloud infrastructure, offering a diverse range of scalable and reliable services. We used AWS to deploy our servers for our application, database and jenkins.
+As our CI/CD automation server, Jenkins automates the build, test, and deployment phases of our application. Jenkins enables us to create robust pipelines that automatically trigger deployments upon code updates, ensuring rapid and reliable delivery of new features.
 
-## Terraform: As our IAC tool in order to automate the build of the AWS infrastructure, We decided to have this as an “if time” increment, for the database vm.
+### AWS: 
+
+Amazon Web Services (AWS) serves as the foundation for our cloud infrastructure, offering a diverse range of scalable and reliable services. We used AWS to deploy our servers for our application, database and jenkins.
+
+## Terraform: 
+
+As our IAC tool in order to automate the build of the AWS infrastructure, We decided to have this as an “if time” increment, for the database vm.
 
 ### If time:
 
-#### Ansible: Utilised for automation, Ansible streamlines the provisioning and configuration of infrastructure components. Its simplicity and versatility make it an ideal choice for orchestrating our deployment process.
+#### Ansible: 
+
+Utilised for automation, Ansible streamlines the provisioning and configuration of infrastructure components. Its simplicity and versatility make it an ideal choice for orchestrating our deployment process.
 
 
