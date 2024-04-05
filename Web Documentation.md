@@ -12,7 +12,9 @@ Our deployment strategy involves implementing a two-tier architecture, separatin
 
 Our deployment process incorporates the following tools:
 
-**Trello**: To efficiently collaborate and complete tasks, we utilised Agile and Scrum methodologies and organised our tasks using Trello. Firstly we had to agree on a Scrum master so that we could set up a Scrum Board that contained user stories and action cards and then work in daily sprints. At the end of each day we had mini retrospectives so that we could move tasks from doing to done or assess where we were or any blockers.
+**Trello**: To efficiently collaborate and complete tasks, we utilised Agile and Scrum methodologies and organised our tasks using Trello. 
+
+Firstly we had to agree on a Scrum master so that we could set up a Scrum Board that contained user stories and action cards and then work in daily sprints. At the end of each day we had mini retrospectives so that we could move tasks from doing to done or assess where we were or any blockers.
 
 Here is our [Trello board](https://trello.com/invite/b/QDreLhch/ATTI55983b89aaf73cdd3fd71ae4bed050ce7D9CD451/project) and an example of how our populated Trello board looked like:
 ![alt text](img/app-img/image-11.png)
