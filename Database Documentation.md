@@ -75,7 +75,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 sudo apt-get install -y mysql-server
 
 # Configure MySQL Server for non-interactive secure installation
-sudo mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';"
+sudo mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED BY '********';"
 sudo mysql -e "FLUSH PRIVILEGES"
 
 # Enable and restart MySQL service
@@ -92,12 +92,12 @@ mkdir -p ~/repo && cd $_
 git clone https://github.com/followcrom/northwind_python_app.git
 
 # Import the database schema
-sudo mysql -u root -proot < ~/repo/northwind_python_app/northwind_sql.sql
+sudo mysql -u root -p***** < ~/repo/northwind_python_app/northwind_sql.sql
 
 # Create a new MySQL user 'group_2' and grant privileges
-sudo mysql -u root -proot -e "CREATE USER IF NOT EXISTS 'group_2'@'%' IDENTIFIED BY 'password';"
-sudo mysql -u root -proot -e "GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'group_2'@'%'"
-sudo mysql -u root -proot -e "FLUSH PRIVILEGES;"
+sudo mysql -u root -p***** -e "CREATE USER IF NOT EXISTS 'group_2'@'*****' IDENTIFIED BY 'password';"
+sudo mysql -u root -p***** -e "GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'group_2'@'*****'"
+sudo mysql -u root -p***** -e "FLUSH PRIVILEGES;"
 ```
 
 ## Automating the Set-up
