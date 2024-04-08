@@ -2,6 +2,14 @@
 
 This is the documentation for a two tier deployment with CI/CD in Jenkins on AWS.
 
+## Group Members
+
+- Morgan
+- Richard
+- Oliver
+- Niamh
+- Ajhar
+
 ## Introduction
 
 This document presents our strategy for deploying the Northwind Python application onto cloud-based infrastructure while adhering to DevOps principles. The application includes a homepage, a customer listing page, and a page for adding new customers. Our objective is to deploy the application efficiently, leveraging contemporary tools and methodologies acquired during our training. We aim to deliver a scalable, resilient, and automated deployment solution that aligns with modern software development practices. By utilising advanced DevOps tools, we seek to streamline the deployment process and enhance overall efficiency. Initially, we will manually validate functionality before progressing to the development of scripts and automation.
